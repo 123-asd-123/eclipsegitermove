@@ -1,12 +1,12 @@
 package cwq_1113_shiyan;
-
+//666666
 //chenweiqiang123
 public class MainClass {
 
 	public static void main(String[] args) {
 		QueueCaller qc = new QueueCaller();
 		for (int i = 1; i <= 3; i++) {
-			qc.fetchNumber("ÕÅÈý-"+i);
+			qc.fetchNumber("Ã•Ã…ÃˆÃ½-"+i);
 		}
 		while (qc.size()!=0) {
 			qc.callNumber();
