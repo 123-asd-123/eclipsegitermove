@@ -1,10 +1,10 @@
 package cwq_1113_shiyan;
-
+//asdbf
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-//ÅÅ¶Ó¶ÓÁĞ²Ù×÷ÎÊÌâ
+//æ’é˜Ÿé˜Ÿåˆ—æ“ä½œé—®é¢˜
 public class QueueCaller {
 
 	private ArrayList<String> queue =new ArrayList<String>();
@@ -14,27 +14,27 @@ public class QueueCaller {
 		super();
 	}
 
-	// ³ß´ç´óĞ¡
+	// å°ºå¯¸å¤§å°
 	public int size() {
 		return queue.size();
 	}
 
-	// Ìí¼ÓÅÅ¶Ó¶ÓÁĞÖĞÈ¥
+	// æ·»åŠ æ’é˜Ÿé˜Ÿåˆ—ä¸­å»
 	public void fetchNumber(String patient) {
 		queue.add(patient);
-		System.out.println(patient + "Ç°Ãæ»¹ÓĞ " + (size() - 1) + " Î»ÔÚµÈºò¾ÍÕï");
+		System.out.println(patient + "å‰é¢è¿˜æœ‰ " + (size() - 1) + " ä½åœ¨ç­‰å€™å°±è¯Š");
 	}
 
-	// Êä³ö»¼ÕßµÄĞÕÃû
+	// è¾“å‡ºæ‚£è€…çš„å§“å
 	public void showPatients() {
 		Iterator iter = queue.iterator();
 		while (iter.hasNext()) {
-			System.out.println(iter.next() + "ºòÕïÖĞ");
+			System.out.println(iter.next() + "å€™è¯Šä¸­");
 		}
 	}
 
 	public void callNumber() {
-		System.out.println("Çë»¼Õß£º" + queue.get(0) + "µ½ÕïÊÒ¾ÍÕï");
+		System.out.println("è¯·æ‚£è€…ï¼š" + queue.get(0) + "åˆ°è¯Šå®¤å°±è¯Š");
 		queue.remove(0);
 	}
 }
